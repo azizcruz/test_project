@@ -5,34 +5,34 @@
 # Installation
 * navigate to your directory where you want the project folder to be.
 * create a virtual environment using the following command
-'''shell
+```shell
 $ python3 -m venv oculyze
-'''
+```
 * navigate to oculyze directory
-'''shell 
+```shell 
 $ cd oculyze
-'''
+```
 * activate the virtual environment
-'''shell
+```shell
 $ source bin/activate
-'''
+```
 * clone the project from the repo using the following command
-'''shell
+```shell
 $ git clone https://github.com/azizcruz/test_project.git
-'''
+```
 * when the project is cloned navigate to the directory
-'''shell 
+```shell 
 $ cd test_project
-'''
+```
 * build the containers using docker-compose
-'''shell
+```shell
 $ docker-compose build 
-'''
+```
 this step may take some time to finish.
 * when it is finished start the containers using
-'''shell
+```shell
 $ docker-compose up 
-'''
+```
 now both of the services are running and connected to a private network named test_project_private-net using docker bridge networks.
 
 # Usage
