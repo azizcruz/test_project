@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    command: python app.py
+    volumes:
+      - .:/app
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+    networks:
+      - private-net
+  db:
+    image: mongo
+    networks:
+      - private-net
+    ports:
+    - "$PORT:27017"
+
+networks:
+  private-net:
+    driver: bridge
