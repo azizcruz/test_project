@@ -16,8 +16,6 @@ services:
     image: mongo
     networks:
       - private-net
-    ports:
-    - "$PORT:27017"
 
 networks:
   private-net:
